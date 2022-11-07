@@ -51,12 +51,10 @@ namespace SignalRServerExample.Hubs
             //await Clients.OthersInGroup(groupName).SendAsync("receiveMessage", message);
             #endregion
             #region User
-            await Context.User.Identity.;
-            //await Clients.User()
-
+            //await Clients.User(userId)
             #endregion
             #region Users
-
+            // await Clients.Users(userIds).SendAsync("receiveMessage", message);
             #endregion
             #endregion
         }
